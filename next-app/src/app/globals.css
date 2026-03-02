@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0a1628;
+  --navy-light: #132337;
+  --gold: #c9a227;
+  --gold-soft: #e8d5a3;
+  --cream: #f8f6f1;
+  --gray: #6b7280;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-navy: #0a1628;
+  --color-navy-light: #132337;
+  --color-gold: #c9a227;
+  --color-gold-soft: #e8d5a3;
+  --color-cream: #f8f6f1;
+  --color-gray: #6b7280;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+/* Geometric background pattern */
+.bg-pattern {
+  background-image: 
+    linear-gradient(90deg, rgba(201, 162, 39, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(201, 162, 39, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
