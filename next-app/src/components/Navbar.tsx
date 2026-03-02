@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { href: "#perfil", label: "Perfil" },
-  { href: "#experiencia", label: "Experiencia" },
-  { href: "#formacion", label: "Formación" },
-  { href: "#habilidades", label: "Habilidades" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#perfil", label: "Perfil" },
+  { href: "/#experiencia", label: "Experiencia" },
+  { href: "/#formacion", label: "Formación" },
+  { href: "/#habilidades", label: "Habilidades" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
         scrolled ? "py-3" : ""
       }`}
     >
-      <a href="#" className="font-serif text-2xl font-bold text-navy">
+      <a href="/" className="font-serif text-2xl font-bold text-navy">
         DBK
       </a>
 
