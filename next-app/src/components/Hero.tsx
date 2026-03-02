@@ -90,7 +90,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="text-sm text-gray tracking-widest"
+          className="text-sm text-gray tracking-widest mb-16 md:mb-0"
         >
           {cvData.sectors.join(" · ")}
         </motion.p>
@@ -101,7 +101,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2"
       >
         <div className="w-6 h-10 border-2 border-gold rounded-xl relative overflow-hidden">
           <motion.div
