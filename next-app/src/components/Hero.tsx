@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { cvData } from "@/data/cv";
 
 export default function Hero() {
@@ -20,10 +21,30 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-navy mb-2 tracking-tight"
+          className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-navy mb-6 tracking-tight"
         >
           {cvData.name}
         </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35 }}
+          className="flex justify-center mb-6"
+        >
+          <div className="relative p-2 bg-gradient-to-br from-gold via-gold-soft to-gold rounded-lg shadow-[0_0_0_3px_rgba(201,162,39,0.3),inset_0_0_20px_rgba(201,162,39,0.1)]">
+            <div className="relative w-44 h-44 md:w-64 md:h-64 rounded-md overflow-hidden bg-cream">
+              <Image
+                src="/icono.png"
+                alt="Daniela Belén Kaul"
+                fill
+                sizes="(max-width: 768px) 176px, 256px"
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

@@ -18,6 +18,22 @@ export const metadata: Metadata = {
   title: "Daniela Belén Kaul | Alianzas Estratégicas & Finanzas",
   description:
     "Profesional en alianzas estratégicas, desarrollo de partners y optimización financiera. Santander Consumer | General Motors",
+  metadataBase: new URL(
+    process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000"
+  ),
+  openGraph: {
+    title: "Daniela Belén Kaul | Alianzas Estratégicas & Finanzas",
+    description:
+      "Profesional en alianzas estratégicas, desarrollo de partners y optimización financiera.",
+    images: ["/icono.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Daniela Belén Kaul | Alianzas Estratégicas & Finanzas",
+    images: ["/icono.png"],
+  },
 };
 
 export default function RootLayout({
